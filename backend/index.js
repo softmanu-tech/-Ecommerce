@@ -1,6 +1,5 @@
 const express = require('express')
 const cors = require('cors')
-const dotenv = require("dotenv")
 const cookieParser = require('cookie-parser')
 const mpesaController =require('./mpesaController')
 
@@ -8,7 +7,7 @@ console.log('mpesaController:', mpesaController);
 console.log('initiateSTKPush:', mpesaController.initiateSTKPush);
 console.log('getOAuthToken:', mpesaController.getOAuthToken);
 const bodyParser = require('body-parser')
-dotenv.config()
+require('dotenv').config()
 const connectDB = require('./config/db')
 const router = require('./routes')
 const axios = require('axios')
@@ -91,7 +90,7 @@ app.get("/", (req, res) =>{
 })
 
 
-const PORT = process.env.PORT || 8080 
+const PORT = process.env.PORT || 8080
 
 connectDB().then(()=>{
     app.listen(PORT,()=>{

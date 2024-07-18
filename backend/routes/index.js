@@ -52,7 +52,6 @@ router.post("/filter-product",filterProductController)
  router.post("/update-cart-product",authToken,updateAddToCartProduct)
  router.post("/delete-cart-product",authToken,deleteAddToCartProduct)
  
- router.post("/stk")
 
 
 module.exports = router

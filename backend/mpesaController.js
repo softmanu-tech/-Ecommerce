@@ -68,7 +68,7 @@ const initiateSTKPush = async (req, res) => {
       }
     );
 
-    res.json(response.data)
+    res.status(200).json(response.data)
     
   } catch (error) {
     console.error('Error initiating STK push:', error);
