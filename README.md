@@ -15,3 +15,6 @@ This is an E-Commerce website built using the MERN (MongoDB, Express.js, React.j
 - React.js: Frontend library
 - Node.js: Runtime environment
 - Daraja API: Payment integration
+
+## Link
+https://youtu.be/2gavAXYTxjo
