@@ -1,0 +1,42 @@
+.bannerContainer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .carouselWrapper {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .buttonWrapper {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    z-index: 10;
+  }
+  
+  .imageSlider {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    height: 100%;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    height: 100%;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
